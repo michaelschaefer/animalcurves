@@ -7,8 +7,7 @@ from numpy import sin, cos, sqrt, sign
 
 
 def theta(t):
-    #return 0.5 * (sign(t) - sign(t)**2) + 1
-    return 0.5 * (sign(t) + 1)
+    return 0.5 * (sign(t) - sign(t)**2) + 1
 
 
 T = 96*pi
