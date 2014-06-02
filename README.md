@@ -20,5 +20,7 @@ If you want to add new curves yourself, please feel free to do so. All you have 
 Python script with the necessary data in the same directory as `animalcurves.py`. The new script must contain
 * a variable `T` indicating the end of the plotting range
 * an optional variable `N` indicating the number of plotting points
-* a function `func_x(t)` with the x coordinates
-* a function `func_y(t)` with the y coordinates
+* a function `func_x(t)` returning the x coordinate for the given `t`
+* a function `func_y(t)` with the y coordinate for the given `t`
+Please make sure the `func_x` and `func_y` are vectorized, that is that they work also in the case that `t` is an array.
+You can use `template.py` and fill your new stuff there.
